@@ -11,3 +11,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+bindkey -v
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export EDITOR="nvim"
+alias ec="emacsclient --create-frame"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+eval "$(starship init zsh)"
+
