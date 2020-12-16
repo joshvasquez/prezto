@@ -17,6 +17,9 @@ bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/Users/least/.composer/vendor/bin:$PATH"
+export PATH="/Users/least/scripts:$PATH"
+export PATH="/Users/least/.emacs.d/bin:$PATH"
 
 export EDITOR="nvim"
 alias ec="emacsclient --create-frame"
@@ -24,5 +27,5 @@ alias ec="emacsclient --create-frame"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
